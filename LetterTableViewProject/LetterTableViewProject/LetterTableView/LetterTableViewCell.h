@@ -17,5 +17,5 @@ NS_ASSUME_NONNULL_BEGIN
 NS_ASSUME_NONNULL_END
 @interface LetterWordItemModel : NSObject
 @property (nonatomic,strong) NSString *content;
-@property (nonatomic,assign) BOOL isCheck;
+@property (nonatomic,assign) BOOL isCheck;//是否被选中
 @end

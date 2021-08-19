@@ -18,17 +18,17 @@
     [super viewDidLoad];
     NSMutableArray *dataArray = [[NSMutableArray alloc] init];
     for (NSInteger i = 0; i < 20; i++) {
-        LetterTableItemModel *item = [[LetterTableItemModel alloc] initWithContent:[NSString stringWithFormat:@"成都%ld",i]];
+        LetterTableItemModel *item = [[LetterTableItemModel alloc] initWithContent:[NSString stringWithFormat:@"张三%ld",i]];
         [dataArray addObject:item];
     }
     
     for (NSInteger i = 0; i < 20; i++) {
-        LetterTableItemModel *item = [[LetterTableItemModel alloc] initWithContent:[NSString stringWithFormat:@"德阳%ld",i]];
+        LetterTableItemModel *item = [[LetterTableItemModel alloc] initWithContent:[NSString stringWithFormat:@"李四%ld",i]];
         [dataArray addObject:item];
     }
     
     for (NSInteger i = 0; i < 20; i++) {
-        LetterTableItemModel *item = [[LetterTableItemModel alloc] initWithContent:[NSString stringWithFormat:@"南充%ld",i]];
+        LetterTableItemModel *item = [[LetterTableItemModel alloc] initWithContent:[NSString stringWithFormat:@"王二麻子%ld",i]];
         [dataArray addObject:item];
     }
     
@@ -44,6 +44,6 @@
 
 
 - (void)clickItem:(LetterTableItemModel *)item {
-    
+    NSLog(@"%@",item.content);
 }
 @end
