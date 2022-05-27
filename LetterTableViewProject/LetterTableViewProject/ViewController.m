@@ -37,7 +37,7 @@
         [dataArray addObject:item];
     }
     
-    _letterView = [[LetterTableView alloc] initWithFrame:CGRectMake(0, 88, CGRectGetWidth([UIScreen mainScreen].bounds), CGRectGetHeight([UIScreen mainScreen].bounds) - 88) dataArray:dataArray delegate:self];
+    _letterView = [[LetterTableView alloc] initWithFrame:CGRectMake(0, 0, CGRectGetWidth([UIScreen mainScreen].bounds), CGRectGetHeight([UIScreen mainScreen].bounds)) dataArray:dataArray delegate:self];
     [self.view addSubview:_letterView];
 }
 
